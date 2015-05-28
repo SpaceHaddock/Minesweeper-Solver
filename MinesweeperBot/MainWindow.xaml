@@ -1,0 +1,13 @@
+﻿<Window x:Class="MinesweeperBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Minesweeper Solver" ResizeMode="CanMinimize"
+        Width="{Binding win_width}" MinWidth="{Binding win_width}" MaxWidth="{Binding win_width}"
+        Height="{Binding win_height}" MinHeight="{Binding win_height}" MaxHeight="{Binding win_height}"
+        >
+    <StackPanel Background="#FFE6E6E6">
+        <Button Name="SimulateButton" Content="Simulate" Height="20" Click="Button_Click" />
+        <ProgressBar Name="ProgressBar" Height="10"/>
+        <UniformGrid Name="MainGrid" />
+    </StackPanel>
+</Window>
